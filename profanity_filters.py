@@ -79,6 +79,7 @@ def revertBack(filePath):
             print("Reverted Back")
         except:
             print("Log file is missing in "+str(folderName))
+        os.unlink('log')
 choice = "Yes"
 while choice.lower() == 'yes':
     print("What do you want to do:")
